@@ -9,13 +9,13 @@ import Phone from "@/assets/phone.png";
 
 export function SectionService() {
   return (
-    <section className=" relative w-full h-[965px]">
+    <section className=" relative w-full h-[965px] ">
       <Container>
-        <div className="flex-1 max-w-[594px] pt-32">
+        <div className="flex-1 md:max-w-[450px] lg:max-w-[594px] md:pt-10 pt-32">
           <span className="block text-primary-orange text-sm font-bold uppercase mb-9">
             Serviços exclusivos
           </span>
-          <h1 className="text-primary-gray text-[56px] font-bold leading-tight mb-6">
+          <h1 className="text-primary-gray md:text-4xl text-[56px] font-bold leading-tight mb-6">
             Gerencie suas finanças sem sair de casa
           </h1>
           <p className="text-lg max-w-[554px] mb-16 text-sencond-gray">
@@ -71,8 +71,12 @@ export function SectionService() {
           </ul>
         </div>
       </Container>
-      <div className=" flex items-center absolute top-0 right-0 w-[32%] h-full bg-gray-phone">
-        <Image src={Phone} alt="Phone" className="translate-x-[-50%]" />
+      <div className=" flex items-center absolute top-0 right-0 md:w- w-[32%] h-full bg-gray-phone">
+        <Image
+          src={Phone}
+          alt="Phone"
+          className=" md:translate-x-[-20%] lg:translate-x-[-50%]"
+        />
       </div>
     </section>
   );

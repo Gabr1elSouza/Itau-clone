@@ -3,9 +3,9 @@ import { SectionService } from "@/components/SectionServices";
 
 export default function Home() {
   return (
-    <>
+    <div className="">
       <SectionHero />
       <SectionService />
-    </>
+    </div>
   );
 }

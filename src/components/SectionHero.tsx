@@ -8,10 +8,10 @@ import Woman from "@/assets/woman.png";
 
 export function SectionHero() {
   return (
-    <section className="w-full h-[704px] bg-img_bg_hero bg-no-repeat bg-center bg-cover">
+    <section className="w-full h-[704px] md:h-[553px] bg-img_bg_hero bg-no-repeat bg-center bg-cover">
       <Container>
-        <div className="flex-1 max-w-[500px]">
-          <h1 className="text-white text-7xl font-bold mb-4">
+        <div className="flex-1 lg:max-w-[500px]">
+          <h1 className="text-white md:text-4xl  lg:text-7xl font-bold mb-4">
             Tenha seu banco na palma da sua mão.
           </h1>
           <p className="text-white text-xl max-w-[408px] mb-8">
@@ -33,7 +33,11 @@ export function SectionHero() {
             </span>
           </button>
         </div>
-        <Image className="mr-[-41px]" src={Woman} alt="Woman" />
+        <Image
+          className="md:max-w-[550px] md:mr-[-61px] lg:mr-[-41px]"
+          src={Woman}
+          alt="Woman"
+        />
       </Container>
     </section>
   );
